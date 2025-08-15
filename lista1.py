@@ -12,16 +12,34 @@ valor2 = 27
 print(valor1,valor2)
 
 #3. Faça um programa que imprima a média aritmética entre os números 5, 8, 12.
+n1 = 5
+n2 = 8
+n3 = 12
+media = (n1+n2+n3)/2
+print(media)
 
-#4. Faça um programa que leia e imprima um número inteiro.
+#4. Faça um programa que leia; e imprima um número inteiro.
+numero = int(input('Digite um número: '))
+print(numero)
 
 #5. Faça um programa que leia dois números reais e os imprima.
+n1 = float(input("Digite o primeiro número real: "))
+n2 = float(input("Digite o segundo número real: "))
+print(n1,n2)
 
 #6. Faça um programa que leia um número inteiro e imprima o seu
 #   antecessor e o seu sucessor.
+numero = int(input("Digite um número: "))
+mais = numero + 1
+menos = numero - 1
+print("O antecessor de ",numero,"é: ",menos,"e seu sucessor é: ",mais)
 
 #7. Faça um programa que leia o nome o endereço e o telefone de
 #   um cliente e ao final, imprima esses dados.
+nome = str(input("Digite seu nome: "))
+local = str(input("Digite seu endereço: "))
+tel = int(input("Digite seu telefone: "))
+print(nome, " reside em: ", local, " e seu telefone é: ", tel)
 
 #8. Faça um programa que leia dois números inteiros e imprima a
 #   subtração deles.
