@@ -43,8 +43,14 @@ print(nome, " reside em: ", local, " e seu telefone é: ", tel)
 
 #8. Faça um programa que leia dois números inteiros e imprima a
 #   subtração deles.
+n1 = int(input("Digite o primeiro número:  "))
+n2 = int(input("Digite o segundo número:  "))
+sub = n1-n2
+print("A subtração de ",n1," e ",n2," é de: ",sub)
 
 #9. Faça um programa que leia um número real e imprima ¼ deste número.
+
+
 
 #10. Faça um programa que leia três números reais e calcule a
 #    média aritmética destes números. Ao final, o programa deve
