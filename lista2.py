@@ -29,7 +29,13 @@ def exemploSe_SenaoSe_Senao():
     
 #1. Faça um programa que leia dois valores numéricos inteiros e efetue
 #   a adição, caso o resultado seja maior que 10, apresentá-lo.
-
+n1 = int(input('Insira o primeiro numero: '))
+n2 = int(input('Insira o segundo numero: '))
+soma = n1+n2
+if soma > 10
+    print(soma)
+else
+    print("Soma menor que 10")
 #2. Faça um programa que leia dois valores inteiros e efetue a adição.
 #   Caso o valor somado seja maior que 20, este deverá ser apresentado
 #   somando-se a ele mais 8, caso o valor somado seja menor ou igual a
