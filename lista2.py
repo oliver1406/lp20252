@@ -40,12 +40,27 @@ else
 #   Caso o valor somado seja maior que 20, este deverá ser apresentado
 #   somando-se a ele mais 8, caso o valor somado seja menor ou igual a
 #   20, este deverá ser apresentado subtraindo-se 5.
+n1= int(input("Digite o primeiro número: "))
+n2= int(input("Digite o segundo número: "))
+soma = n1+n2
+if soma> 20
+    print(soma+8)
+else 
+    print(soma-5)
 
 #3. Faça um programa que leia um número e imprima uma das duas mensagens:
 #   "É múltiplo de 3"ou "Não é múltiplo de 3".
-
+num = int(input("Digite um número: "))
+if num%3 = 1
+    print("É multiplo de 3!")
+else
+    print("Não é multiplo de 3!")
 #4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
-
+num= int(input("Digite um número: "))
+if num%5 = 1
+    print("Divisível por 5")
+else
+    print("Não divisível por 5")
 #5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
 
 #6. A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários
