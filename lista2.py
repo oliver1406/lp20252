@@ -2,6 +2,7 @@
 Exercícios sobre os comandos de condição em python
 '''
 
+
 def exemploSe():
     idade = int(input('Idade:'))
     if idade >= 18:
@@ -29,58 +30,97 @@ def exemploSe_SenaoSe_Senao():
     
 #1. Faça um programa que leia dois valores numéricos inteiros e efetue
 #   a adição, caso o resultado seja maior que 10, apresentá-lo.
-n1 = int(input('Insira o primeiro numero: '))
-n2 = int(input('Insira o segundo numero: '))
-soma = n1+n2
-if soma > 10
-    print(soma)
-else
-    print("Soma menor que 10")
+def q1()
+    n1 = int(input('Insira o primeiro numero: '))
+    n2 = int(input('Insira o segundo numero: '))
+    soma = n1+n2
+    if soma > 10
+        print(soma)
+    else
+     print("Soma menor que 10")
 #2. Faça um programa que leia dois valores inteiros e efetue a adição.
 #   Caso o valor somado seja maior que 20, este deverá ser apresentado
 #   somando-se a ele mais 8, caso o valor somado seja menor ou igual a
 #   20, este deverá ser apresentado subtraindo-se 5.
-n1= int(input("Digite o primeiro número: "))
-n2= int(input("Digite o segundo número: "))
-soma = n1+n2
-if soma> 20
-    print(soma+8)
-else 
-    print(soma-5)
+def q2()
+    n1= int(input("Digite o primeiro número: "))
+    n2= int(input("Digite o segundo número: "))
+    soma = n1+n2
+    if soma> 20
+        print(soma+8)
+    else 
+        print(soma-5)
 
 #3. Faça um programa que leia um número e imprima uma das duas mensagens:
 #   "É múltiplo de 3"ou "Não é múltiplo de 3".
-num = int(input("Digite um número: "))
-if num%3 = 1
-    print("É multiplo de 3!")
-else
-    print("Não é multiplo de 3!")
+def q3()
+    num = int(input("Digite um número: "))
+    if num%3 = 1
+        print("É multiplo de 3!")
+    else
+        print("Não é multiplo de 3!")
 #4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
-num= int(input("Digite um número: "))
-if num%5 = 1
-    print("Divisível por 5")
-else
-    print("Não divisível por 5")
+def q5()
+    num= int(input("Digite um número: "))
+    if num%5 = 1:
+        print("Divisível por 5")
+    else:
+        print("Não divisível por 5")
 #5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
+def q5()
+    num= int(input("Digite um número: "))
+    if num % 3 and num % 7
+        print("É divisivel")
+    else
+        print("Não é divisivel")
 
 #6. A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários
 #   estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário
 #   bruto. Faça um programa que permita entrar com o salário bruto
 #   e o valor da prestação e informar se o empréstimo pode ou não ser concedido.
-
+def q6()
+    salario = float(input("Sálario bruto: "))
+    prestacao = float(input("Prestação para autorizar: R$: "))
+    prestamax = salario * 0.3
+    if prestacao > prestamax:
+        print("Empréstimo não autorizado")
+    else:
+        print("Emprestimo autorizado")
 #7. Faça um programa que leia um número e indique se o número está compreendido
 #   entre 20 e 50 ou não.
-
+def q7()
+    num = int(input("Digite um número: "))
+    if num>=20 and num<=50:
+        print("Está alocado entre 20 e 50")
+    else:
+        print("Não esta alocado")
 #8. Faça um programa que leia um número e imprima uma das mensagens:
 #   "Maior do que 20", "Igual a 20"ou "Menor do que 20".
-
+def q8()
+    num = int(input("Digite um número: "))
+    if num > 20:
+        print("Maior que 20")
+    elif num < 20:
+        print("Menor que 20")
+    else:
+        print("É igual a 20")
 #9. Faça um programa que permita entrar com o ano de nascimento da pessoa e com o
 #   ano atual. O programa deve imprimir a idade da pessoa. Não se esqueça de
 #   verificar se o ano de nascimento informado é válido.
-
+def q9()
+    anonascimento = int(input("Digite seu ano de nascimento: "))
+    anoatual = int(input("Digite o ano atual: "))
+    if anonascimento > anoatual:
+        print("Viagem no tempo????")
+    else:
+        print(f'Idade: {anoatual - anonascimento} anos')
 #10. Faça um programa que leia três números inteiros e imprima os três em ordem
 #crescente.
-        
+def q10()
+    n1 = int(input("Digite o primeiro número: "))
+    n2 = int(input("Digite o segundo número: "))
+    n3 = int(input("Digite o terceiro número: "))
+
 #11. Faça um programa que leia 3 números e imprima o maior deles.
 
 #12. Faça um programa que leia a idade de uma pessoa e informe:
