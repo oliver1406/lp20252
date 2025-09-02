@@ -2,6 +2,10 @@
 Exercícios sobre os comandos de condição em python
 '''
 
+from datetime import date, datetime
+
+HOJE = datetime.now() # Pega data/hora do computador
+
 
 def exemploSe():
     idade = int(input('Idade:'))
@@ -114,6 +118,16 @@ def q9()
         print("Viagem no tempo????")
     else:
         print(f'Idade: {anoatual - anonascimento} anos')
+
+def q91():
+    data_str = input('Data de nascimento (dd/mm/aaaa): ')
+    print(f'Ano atual: {datetime.strftime(HOJE,"%Y")}')
+    data_nascimento = datetime.strptime(data_str, '%d/%m/%Y')
+    if data_nascimento > HOJE:
+        print('Data de nascimento inválida!')
+    else:
+        print(f'Idade: {int((HOJE - data_nascimento).days/365)} anos.')
+
 #10. Faça um programa que leia três números inteiros e imprima os três em ordem
 #crescente.
 def q10()
