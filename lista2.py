@@ -6,6 +6,10 @@ from datetime import date, datetime
 
 HOJE = datetime.now() # Pega data/hora do computador
 
+def cabecalho(titulo):
+    print('========================================')
+    print(f'============= {titulo} ===============')
+    print('========================================')
 
 def exemploSe():
     idade = int(input('Idade:'))
@@ -34,55 +38,55 @@ def exemploSe_SenaoSe_Senao():
     
 #1. Faça um programa que leia dois valores numéricos inteiros e efetue
 #   a adição, caso o resultado seja maior que 10, apresentá-lo.
-def q1()
+def q1():
     n1 = int(input('Insira o primeiro numero: '))
     n2 = int(input('Insira o segundo numero: '))
     soma = n1+n2
-    if soma > 10
+    if soma > 10:
         print(soma)
-    else
+    else:
      print("Soma menor que 10")
 #2. Faça um programa que leia dois valores inteiros e efetue a adição.
 #   Caso o valor somado seja maior que 20, este deverá ser apresentado
 #   somando-se a ele mais 8, caso o valor somado seja menor ou igual a
 #   20, este deverá ser apresentado subtraindo-se 5.
-def q2()
+def q2():
     n1= int(input("Digite o primeiro número: "))
     n2= int(input("Digite o segundo número: "))
     soma = n1+n2
-    if soma> 20
+    if soma> 20:
         print(soma+8)
-    else 
+    else :
         print(soma-5)
 
 #3. Faça um programa que leia um número e imprima uma das duas mensagens:
 #   "É múltiplo de 3"ou "Não é múltiplo de 3".
-def q3()
+def q3():
     num = int(input("Digite um número: "))
-    if num%3 = 1
+    if (num % 3 == 1):
         print("É multiplo de 3!")
-    else
+    else:
         print("Não é multiplo de 3!")
 #4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
-def q5()
+def q4():
     num= int(input("Digite um número: "))
-    if num%5 = 1:
+    if num%5 == 1:
         print("Divisível por 5")
     else:
         print("Não divisível por 5")
 #5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
-def q5()
+def q5():
     num= int(input("Digite um número: "))
-    if num % 3 and num % 7
+    if num % 3 and num % 7:
         print("É divisivel")
-    else
+    else:
         print("Não é divisivel")
 
 #6. A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários
 #   estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário
 #   bruto. Faça um programa que permita entrar com o salário bruto
 #   e o valor da prestação e informar se o empréstimo pode ou não ser concedido.
-def q6()
+def q6():
     salario = float(input("Sálario bruto: "))
     prestacao = float(input("Prestação para autorizar: R$: "))
     prestamax = salario * 0.3
@@ -92,7 +96,7 @@ def q6()
         print("Emprestimo autorizado")
 #7. Faça um programa que leia um número e indique se o número está compreendido
 #   entre 20 e 50 ou não.
-def q7()
+def q7():
     num = int(input("Digite um número: "))
     if num>=20 and num<=50:
         print("Está alocado entre 20 e 50")
@@ -100,7 +104,7 @@ def q7()
         print("Não esta alocado")
 #8. Faça um programa que leia um número e imprima uma das mensagens:
 #   "Maior do que 20", "Igual a 20"ou "Menor do que 20".
-def q8()
+def q8():
     num = int(input("Digite um número: "))
     if num > 20:
         print("Maior que 20")
@@ -111,7 +115,7 @@ def q8()
 #9. Faça um programa que permita entrar com o ano de nascimento da pessoa e com o
 #   ano atual. O programa deve imprimir a idade da pessoa. Não se esqueça de
 #   verificar se o ano de nascimento informado é válido.
-def q9()
+def q9():
     anonascimento = int(input("Digite seu ano de nascimento: "))
     anoatual = int(input("Digite o ano atual: "))
     if anonascimento > anoatual:
@@ -130,24 +134,58 @@ def q91():
 
 #10. Faça um programa que leia três números inteiros e imprima os três em ordem
 #crescente.
-def q10()
+def q10():
     n1 = int(input("Digite o primeiro número: "))
     n2 = int(input("Digite o segundo número: "))
     n3 = int(input("Digite o terceiro número: "))
+    numeros = [n1,n2,n3]
+    numeros.sort()
+    print(numeros)
 
 #11. Faça um programa que leia 3 números e imprima o maior deles.
+def q11():
+    n1 = int(input("Digite o primeiro número: "))
+    n2 = int(input("Digite o segundo número: "))
+    n3 = int(input("Digite o terceiro número: "))
+    if n1 > n2 and n3:
+        print(n1)
+    elif n2 > n1 and n3:
+        print(n2)
+    else:
+        print(n3)
 
 #12. Faça um programa que leia a idade de uma pessoa e informe:
 #• Se é maior de idade
 #• Se é menor de idade
 #• Se é maior de 65 anos
-
+def q12():
+    idade = int(input("Informe sua idade: "))
+    if idade >= 18 and idade < 65:
+        print("Maior de idade")
+    elif idade < 18:
+        print("Menor de idade")
+    else: 
+        print("Idoso")
 #13. Faça um programa que permita entrar com o nome, a nota da prova 1 e a nota
 #da prova 2 de um aluno. O programa deve imprimir o nome, a nota da prova 1,
 #a nota da prova 2, a média das notas e uma das mensagens: "Aprovado",
 #"Reprovado"ou "em Prova Final"(a média é 7 para aprovação, menor que 3 para
 #reprovação e as demais em prova final).
-
+def q13():
+    nome = str(input("Qual o seu nome?: "))
+    n1 = int(input("Nota prova 1: "))
+    n2 = int(input("Nota prova 2: "))
+    media = (n1 + n2)/2
+    print("Aluno: ",nome)
+    print("Nota 1: ",n1)
+    print("Nota 2: ",n2)
+    print("Sua média: ",media)
+    if media >=7:
+        print("Aprovado")
+    elif media <7 and media >3:
+        print("Em Prova final")
+    else:
+        print("Reprovado")
 #14. Faça um programa que permita entrar com o salário de uma pessoa e imprima o
 #desconto do INSS segundo a tabela seguir:
 #Salário Faixa de Desconto
@@ -155,7 +193,19 @@ def q10()
 #Maior que R$600,00 e menor ou igual a R$1200,00 20%
 #Maior que R$1200,00 e menor ou igual a R$2000,00 25%
 #Maior que R$2000,00 30%
-
+def q14():
+    salario = float(input("Digite seu salário: "))
+    if salario > 600 and salario <= 1200:
+        desconto=(salario*20)/100
+    elif salario > 1200 and salario <= 2000:
+        desconto = (salario*25)/100
+    elif salario > 2000:
+        desconto =  (salario*30)/100
+    else:
+        desconto = 0
+    print("Salario bruto: ",salario)
+    print("Desconto do INSS: ",desconto)
+    print("Salario liquido: ", salario-desconto)
 #15. Um comerciante comprou um produto e quer vendê-lo com um lucro de 45% se o
 #valor da compra for menor que R$20,00, caso contrário, o lucro será de 30%.
 #Faça um programa que leia o valor do produto e imprima o valor da venda.
