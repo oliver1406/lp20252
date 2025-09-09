@@ -206,9 +206,17 @@ def q14():
     print("Salario bruto: ",salario)
     print("Desconto do INSS: ",desconto)
     print("Salario liquido: ", salario-desconto)
+
 #15. Um comerciante comprou um produto e quer vendê-lo com um lucro de 45% se o
 #valor da compra for menor que R$20,00, caso contrário, o lucro será de 30%.
 #Faça um programa que leia o valor do produto e imprima o valor da venda.
+def q15():
+    compra = int(input("Qual o valor da compra? "))
+    if compra <= 20:
+        venda=(compra*45)/100
+    else:
+         venda=(compra*30)/100
+    print("Valor da venda será de: ",venda+compra)
 
 #16. A confederação brasileira de natação irá promover eliminatórias para o
 #próximo mundial. Faça um programa que receba a idade de um nadador e imprima
@@ -219,6 +227,19 @@ def q14():
 #Juvenil A 11 - 13 anos
 #Juvenil B 14 - 17 anos
 #Sênior maiores de 18 anos
+def q16():
+    idade = int(input("Digite sua idade: "))
+    if idade<=7:
+        print("Categoria Infantil [A]")
+    elif idade >=8 and idade <=10:
+        print("Categoria Infantil [B]")
+    elif idade >=11 and idade <=13:
+        print("Categoria Juvenil [A]")
+    elif idade >=14 and idade<=17:
+        print("Categoria Juvenil [B]")
+    elif idade >= 18:
+        print("Categoria Sênior")
+
 
 #17. Depois da liberação do governo para as mensalidades dos planos de saúde,
 #as pessoas começaram a fazer pesquisas para descobrir um bom plano, não
@@ -232,6 +253,24 @@ def q14():
 #Acima de 45 até 59 anos R$150,00
 #Acima de 59 até 65 anos R$250,00
 #Maior que 65 anos R$400,00
+def q17():
+    nome = str(input("Digite seu nome: "))
+    idade = int(input("Digite sua idade: "))
+    if idade<=10:
+        valor=30
+    elif idade>10 and idade<=29:
+        valor=60
+    elif idade>29 and idade<=45:
+        valor=120
+    elif idade>45 and idade<=59:
+        valor=150
+    elif idade>59 and idade<=65:
+        valor=250
+    elif idade>65:
+        valor=400
+    print(nome,"o valor de seu plano de saúde é de: ",valor)
+
+
 
 #18. Faça um programa que leia um número inteiro entre 1 e 12 e escreva o mês
 #correspondente. Caso o usuário digite um número fora desse intervalo, deverá
