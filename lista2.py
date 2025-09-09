@@ -275,6 +275,37 @@ def q17():
 #18. Faça um programa que leia um número inteiro entre 1 e 12 e escreva o mês
 #correspondente. Caso o usuário digite um número fora desse intervalo, deverá
 #aparecer uma mensagem informando que não existe mês com este número.
+def q18():
+    num = int(input("Digite um número do mês: "))
+    if num == 1:
+        print("Seu número corresponde ao mês de Janeiro")
+    elif num ==2:
+        print("Seu número corresponde ao mês de Fevereiro")
+    elif num ==3:
+        print("Seu número corresponde ao mês de Março")
+    elif num ==4:
+        print("Seu número corresponde ao mês de Abril")
+    elif num ==5:
+        print("Seu número corresponde ao mês de Março")
+    elif num ==6:
+        print("Seu número corresponde ao mês de Junho")
+    elif num ==7:
+        print("Seu número corresponde ao mês de Julho")
+    elif num ==8:
+        print("Seu número corresponde ao mês de Agosto")
+    elif num ==9:
+        print("Seu número corresponde ao mês de Setembro")
+    elif num ==10:
+        print("Seu número corresponde ao mês de Outubro")
+    elif num ==11:
+        print("Seu número corresponde ao mês de Novembro")
+    elif num ==12:
+        print("Seu número corresponde ao mês de Dezembro")
+    else:
+        print("Número inválido")
+
+
+
 
 #19. Em um campeonato nacional de arco-e-flecha, tem-se equipes de três jogadores
 #para cada estado. Sabendo-se que os arqueiros de uma equipe não obtiveram o
