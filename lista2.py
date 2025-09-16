@@ -347,6 +347,25 @@ def q18():
 #Peixe          230cal Sorvete diet     110cal Suco de laranja   70cal
 #Frango         250cal Mousse diet      170cal Suco de melão     100cal
 #Carne          350cal Mousse chocolate 200cal Refrigerante diet 65cal
+def q23():
+    prato = input('Prato(vegetariano/peixe/frango/carne): ')
+    calorias = 0
+    calorias +=180 if prato == "vegetariano" else 0
+    calorias +=230 if prato == "peixe" else 0
+    calorias +=250 if prato == "frango" else 0
+    calorias +=350 if prato == "carne" else 0
+    sobremesa = input('sobremesa: (abacaxi/sorvete diet/mousse diet/mousse chocolate): ')
+    calorias +=75 if sobremesa == "abacaxi" else 0
+    calorias +=110 if sobremesa == "sorvete diet" else 0
+    calorias +=170 if sobremesa == "mousse diet" else 0
+    calorias +=200 if sobremesa == "mousse chocolate" else 0
+    bebida = input('bebida: (chá/suco de laranja/suco de melão/refrigerante diet): ')
+    calorias +=20 if bebida == "chá" else 0
+    calorias +=70 if bebida == "suco de laranja" else 0
+    calorias +=100 if bebida == "suco de melão" else 0
+    calorias +=65 if bebida == "refrigerante diet" else 0
+
+    print(f'Total de calorias do pedido: {calorias} cal')
 
 #24. A polícia rodoviária resolveu fazer cumprir a lei e vistoriar veículos para
 #cobrar dos motoristas o DUT. Sabendo-se que o mês em que o emplacamento do
