@@ -50,17 +50,43 @@ def q4():
 #sucessivas, crie um programa que calcule o produto de dois números inteiros
 #lidos. Suponha que os números lidos sejam positivos.
 
+
+
 #6. Crie um programa que imprima os 20 primeiros termos da série de Fibonacci.
 #Observação: os dois primeiros termos desta série são 1 e 1 e os demais são gerados
 #a partir da soma dos anteriores. Exemplo:
 #• 1 + 1 = 2, terceiro termo;
 #• 1 + 2 = 3, quarto termo, etc.
 # 1 1 2 3 5 8 13 21
+def q6():
+    ant = 0
+    atu = 1
+    for _ in range (20):
+        print(atu)
+        prox = atu+ant
+        ant = atu
+        atu = prox
 
+    
 #7. Crie um programa que permita entrar com o nome, a nota da
 #prova 1 e da prova 2 de 15 alunos. Ao final, imprimir uma listagem, contendo:
 #nome, nota da prova 1, nota da prova 2, e média das notas de cada aluno. Ao final,
 #imprimir a média geral da turma.
+def q7():
+    resultado = "NOME\tN1\tN2\tMEDIA\n"
+    MAX = 3
+    media_turma = 0
+    for _ in range (MAX):
+        nome = (input("Nome: "))
+        n1 = float(input("Nota 1: "))
+        n2 = float(input("Nota 2: "))
+        media = (n1+n2)/2
+        media_turma += media
+        resultado += f'{nome}\t{n1}\t{n2}\t{media}\n'
+    print(resultado)
+    print(f'MEDIA DA TURMA: {round(media_turma/MAX,1)})
+
+
 
 #8. Faça um programa que permita entrar com o nome e o salário bruto de 10 pessoas.
 #Após ler os dados, imprimir o nome e o valor da alíquota do imposto de renda
