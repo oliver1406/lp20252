@@ -1,7 +1,7 @@
 '''
 Lista de Exercícios referentes a estruturas de iteração (repetição)
 '''
-
+import random
 def exemploPara():
     for contador in range(10):
         print(contador, end=' ')
@@ -84,7 +84,6 @@ def q7():
         media_turma += media
         resultado += f'{nome}\t{n1}\t{n2}\t{media}\n'
     print(resultado)
-    print(f'MEDIA DA TURMA: {round(media_turma/MAX,1)})
 
 
 
@@ -95,6 +94,9 @@ def q7():
 #Salário menor que R$1300,00 Isento
 #Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 #Salário maior ou igual a R$2300,00 15% do salário bruto
+
+
+
 
 #9. No dia da estreia do filme "Procurando Dory", uma grande emissora de TV realizou
 #uma pesquisa logo após o encerramento do filme. Cada espectador respondeu
@@ -118,11 +120,32 @@ def q7():
 #11. Construa um programa que leia vários números e informe quantos números
 #entre 100 e 200 foram digitados. Quando o valor 0 (zero) for lido, o algoritmo
 #deverá cessar sua execução.
+def q11():
+    contador = 0
+    while True:     #laço infinito 
+        numero = random.randrange(201)
+        print(numero, end=" ")
+        contador +=1 if numero >=100 and numero <= 200 else 0
+        if numero == 0:
+            break
+    print(f'Quantidade de números entre 100 e 200: {contador}')
+
 
 #12. Dado um país A, com 5 milhões de habitantes e uma taxa de natalidade de 3% ao
 #ano, e um país B com 7 milhões de habitantes e uma taxa de natalidade de 2% ao
 #ano, fazer um programa que calcule e imprima o tempo necessário para que a
 #população do país A ultrapasse a população do país B.
+def q12():
+    populacao_a = 5000000
+    populacao_b = 7000000
+    taxa_a = 0.03
+    taxa_b = 0.02
+    anos = 0
+    while populacao_a <= populacao_b:
+        populacao_a = populacao_a * (1 + taxa_a)
+        populacao_b = populacao_b * (1 + taxa_b)
+        anos += 1
+    print(f"Serão necessários {anos} anos para a população do País A ultrapassar a do País B.")
 
 #13. Uma empresa de fornecimento de energia elétrica faz a leitura mensal dos medidores
 #de consumo. Para cada consumidor, são digitados os seguintes dados:
@@ -137,6 +160,9 @@ def q7():
 #• O custo total para cada consumidor
 #• O total de consumo para os três tipos de consumidor
 #• A média de consumo dos tipos 1 e 2
+def q13():
+    
+
 
 #14. Faça um programa que leia vários números inteiros e apresente o fatorial de cada
 #número. O algoritmo encerra quando se digita um número menor do que 1.n
