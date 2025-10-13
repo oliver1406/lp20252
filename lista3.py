@@ -94,9 +94,20 @@ def q7():
 #Salário menor que R$1300,00 Isento
 #Salário maior ou igual a R$1300,00 e menor que R$2300,00 10% do salário bruto
 #Salário maior ou igual a R$2300,00 15% do salário bruto
+def q8():
+    for i in range (10):
+        nome = str(input("Digite seu nome: "))
+        salario = int(input("Seu salário: "))
 
-
-
+        if salario < 1300:
+            print("Isento")
+        elif salario >= 1300 and salario <2300:
+            print(salario * 0.10)
+            print(salario - (salario * 0.10))
+        elif salario >=2300:
+            print("O valor de imposto será de: ",salario * 0.15)
+            print("Salario liquido" , salario - (salario * 0.15))
+    
 
 #9. No dia da estreia do filme "Procurando Dory", uma grande emissora de TV realizou
 #uma pesquisa logo após o encerramento do filme. Cada espectador respondeu
@@ -161,6 +172,22 @@ def q12():
 #• O total de consumo para os três tipos de consumidor
 #• A média de consumo dos tipos 1 e 2
 def q13():
+    def calcula_custo (consumo, tipo):   
+        if tipo == 1:
+            precokwh = 0.03
+        elif tipo == 2:
+            precokwh = 0.05
+        elif tipo == 3:
+            precokwh = 0.07
+        else:
+            return 0
+    return consumo * precokwh
+    def main():
+        total_redidencial = 0
+        total_comercial = 0
+        total_industrial = 0
+
+
     
 
 
