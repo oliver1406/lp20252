@@ -249,6 +249,10 @@ def q15():
 #• quantidade
 #O programa deverá processar novos pedidos até que o usuário digite 0 (zero)
 #como número do pedido.
+def 17():
+    produtos = [carne, bebida, grao, massas, doce, lacteos, frios, limpeza]
+    
+
 
 #18. Uma pousada estipulou o preço para a diária em R$30,00 e mais uma taxa de
 #serviços diários de:
