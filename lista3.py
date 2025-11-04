@@ -249,11 +249,30 @@ def q15():
 #• quantidade
 #O programa deverá processar novos pedidos até que o usuário digite 0 (zero)
 #como número do pedido.
-def 17():
-    produtos = [carne, bebida, grao, massas, doce, lacteos, frios, limpeza]
-    
-
-
+def q17():
+    produtos = {
+        1:[1, "carne", 23.3],
+        2:[2, "limpeza", 12.8],
+        3:[3, "massas", 6.5],
+        4:[4, "bebidas", 8.5]
+    }
+    carrinho = []
+    while True:
+        print("PRODUTOS DA LOUJA")
+        for p in produtos:
+            print(f'{produtos[p]}')
+        cod = int(input("Digite o código do produto: "))
+        if cod == 0:
+            break
+        qtde = int(input("Digite a quantidade do produto: "))
+        item = [cod, qtde]
+        carrinho.append(item)
+    print("ITENS DO CARRINHO: ")
+    valor_total = 0
+    for item in carrinho:
+        print(f'{produtos[item[0]]} Qtde: {item[1]} - R$ {produtos[item[0]][2]*item[1]}')
+        valor_total +=produtos[item[0]][2]*item[1]
+        print(f'VALOR TOTAL DO CARRINHO: R$ {valor_total}')
 #18. Uma pousada estipulou o preço para a diária em R$30,00 e mais uma taxa de
 #serviços diários de:
 #• R$15,00, se o número de dias for menor que 10;
