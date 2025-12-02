@@ -1,3 +1,9 @@
+# Calcular a média de cada aluno;
+# Exibir os alunos aprovados e reprovados (média >= 6 para aprovação);
+# Permitir salvar um novo arquivo Excel com uma coluna adicional chamada “Situação” (Aprovado/Reprovado).
+# O usuário deve escolher o nome do arquivo de saída no console.
+
+# INSTALE A BIBLIOTECA PANDAS
 import pandas as pd
 
 #LER A PLANILHA
